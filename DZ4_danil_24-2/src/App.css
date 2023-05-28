@@ -1,93 +1,73 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
 .container {
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(#000, #0f0, #000);
-    animation: animate 5s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    height: 100vh;
 }
 
 .registration {
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	background-color: #222;
-	width: 400px;
-	padding: 40px;
-	border-radius: 4px;
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
 }
 
-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    width: 100%;
-}
-
-form h1 {
-    color: #0f0;
+#header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .area {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
+    margin-bottom: 20px;
 }
 
 .input {
-    display: flex;
+    position: relative;
 }
 
 .input__area {
     width: 100%;
-    padding: 15px 10px;
-    background: #333;
-    outline: none;
+    padding: 10px;
     border: none;
-    color: #fff;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
 .links {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.forgot {
-    color: #fff;
+.forgot, .signin {
+    color: #999;
     text-decoration: none;
-}
-
-.signin {
-    color: #0f0;
-	font-weight: 600;
-    text-decoration: none;
+    font-size: 14px;
 }
 
 .registerbtn {
-    padding: 10px;
-	background: #0f0;
-	color: #111;
-	font-weight: 600;
-	font-size: 1.25em;
-	letter-spacing: 0.05em;
-	border: none;
-    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.registerbtn:hover {
+    background-color: #3e8e41;
 }
